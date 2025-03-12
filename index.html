@@ -116,8 +116,8 @@
             salaryForYear = startSalary + (currentSalary - startSalary) * (i / (workingYears - 1));
           }
 
-          let annualContribution = salaryForYear * taxRate;
-          totalContributions += annualContribution * 2;
+          let annualContribution = salaryForYear * taxRate * 2;
+          totalContributions += annualContribution;
           let interestAccumulated = totalContributions * interestRate;
           totalInterest += annualContribution + interestAccumulated;
         }
